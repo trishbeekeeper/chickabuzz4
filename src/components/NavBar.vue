@@ -1,14 +1,12 @@
 <script setup>
     import { useDisplay } from "vuetify";
     const { xs } = useDisplay();
-    import { useRouter } from "vue-router";
-    const router = useRouter();
 </script>
 <template>
     <v-card class="mx-auto">
         <v-layout>
             <v-app-bar density="compact"
-                       color="amber-lighten-4">
+                       color="amber-lighten-3">
                 <v-row align="center" justify="center">
                     <v-col cols="auto">
                         <v-btn v-if="xs" color="amber-darken-4"
@@ -26,6 +24,7 @@
 
                         <v-btn v-if="xs" color="amber-darken-4"
                                variant="outlined"
+                               :to="{name:'Learnbees'}"
                                class="px-1 ml-1">
                             Learn Bees
                         </v-btn>
@@ -34,7 +33,7 @@
                         <v-btn v-if="!xs" color="amber-darken-4"
                                variant="outlined" class="ml-3" :to="{name:'Classes'}"> Classes </v-btn>
                         <v-btn v-if="!xs" color="amber-darken-4"
-                               variant="outlined" class="ml-3" :to="{name:'Althives'}"> Alt Hives </v-btn>
+                               variant="outlined" class="ml-3" :to="{name:'Protips'}"> Pro Tips </v-btn>
 
                     </v-col>
                 </v-row>

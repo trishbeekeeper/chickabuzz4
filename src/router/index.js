@@ -33,9 +33,14 @@ const routes = [
         component: () => import("../../src/views/Newbees.vue")
     },
     {
-        path: "/althives",
-        name: "Althives",
-        component: () => import("../../src/views/Althives.vue")
+        path: "/learnbees",
+        name: "Learnbees",
+        component: () => import("../../src/views/Learnbees.vue")
+    },
+    {
+        path: "/protips",
+        name: "Protips",
+        component: () => import("../../src/views/Protips.vue")
     },
     {
         path: '/home',
